@@ -5,12 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ItemDTO {
-    private Long productId;
-    private Long quantity;
-    private ProductDTO product;
+public class DemandDTO {
+    private Long id;
+    private List<ItemDTO> itens;
 }
